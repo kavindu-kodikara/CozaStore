@@ -34,25 +34,3 @@
     <li><strong>Email Sending:</strong> JavaMail API for sending email notifications</li>
 </ul>
 
-<h2>Project Setup</h2>
-<ol>
-    <li><strong>Clone the repository:</strong>
-        <pre><code>git clone https://github.com/yourusername/your-repository.git</code></pre>
-    </li>
-    <li><strong>Set up the database:</strong>
-        <p>Create a MySQL database (or configure another database) and update the connection details in <code>hibernate.cfg.xml</code>.</p>
-    </li>
-    <li><strong>Configure email and payment gateway:</strong>
-        <p>Update email SMTP settings and payment gateway API keys in the respective configuration files.</p>
-    </li>
-    <li><strong>Run the application:</strong>
-        <p>Compile and run the Java backend using your preferred IDE or build tool (e.g., Maven/Gradle). Access the application through <code>http://localhost:8080</code>.</p>
-    </li>
-</ol>
-
-<h2>Future Enhancements</h2>
-<ul>
-    <li>Implement product reviews and ratings.</li>
-    <li>Add more advanced filtering options for search.</li>
-    <li>Include order tracking for customers.</li>
-</ul>
