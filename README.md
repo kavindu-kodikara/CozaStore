@@ -1,4 +1,4 @@
-##Clothing E-commerce Web Application
+<h1>##Clothing E-commerce Web Application</h1>
 
 This project is a clothing e-commerce web application developed primarily to master Java backend development with Hibernate. It features a fully functional backend integrated with an HTML template for the frontend, allowing users to sign in, browse products, manage their cart, and complete purchases via a payment gateway.
 
