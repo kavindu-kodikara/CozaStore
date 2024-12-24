@@ -1,36 +1,103 @@
+# CozaStore
 
-<h1>Clothing E-commerce Web Application</h1>
+CozaStore is a fully functioning and responsive Java EE e-commerce web application designed for a clothing shop. The primary focus of this project is mastering Java EE backend development with Hibernate, while also incorporating a user-friendly front end.
 
-<p>This project is a clothing e-commerce web application developed primarily to master Java backend development with Hibernate. It features a fully functional backend integrated with an HTML template for the frontend, allowing users to sign in, browse products, manage their cart, and complete purchases via a payment gateway.</p>
+## Technologies Used
 
-<h2>Features</h2>
-<ul>
-    <li><strong>User Authentication:</strong> Sign-up and sign-in functionalities to authenticate users and maintain sessions.</li>
-    <li><strong>Home Page:</strong> A dynamic home page showcasing featured products, special offers, and clothing categories.</li>
-    <li><strong>Advanced Search:</strong> Users can search for clothing items with various filters, improving product discovery.</li>
-    <li><strong>Cart Management:</strong>
-        <ul>
-            <li><strong>Session Cart:</strong> Allows users to add items to their cart without signing in.</li>
-            <li><strong>Database Cart:</strong> Saves cart items for registered users across sessions.</li>
-        </ul>
-    </li>
-    <li><strong>Checkout Process:</strong>
-        <ul>
-            <li><strong>Payment Gateway:</strong> Integrates a secure payment gateway to process orders.</li>
-            <li><strong>Order Confirmation:</strong> Sends email confirmations upon successful checkout.</li>
-        </ul>
-    </li>
-    <li><strong>Product Management:</strong> Admins can add new products through a dedicated interface.</li>
-    <li><strong>Email Notifications:</strong> Users receive notifications for account registration, order updates, and promotional offers.</li>
-</ul>
+- **Backend**: Java EE, Hibernate
+- **Frontend**: HTML, Bootstrap, JavaScript
+- **Database**: MySQL
+- **Payment Gateway**: PayHere
 
-<h2>Technologies Used</h2>
-<ul>
-    <li><strong>Backend:</strong> Java with Hibernate ORM for database management</li>
-    <li><strong>Frontend:</strong> HTML template for UI design and user interactions</li>
-    <li><strong>Database:</strong> MySQL</li>
-    <li><strong>Session Management:</strong> Utilizes Java session handling to manage cart and user sessions</li>
-    <li><strong>Payment Gateway:</strong> Integrated with a third-party payment provider (PayHear)</li>
-    <li><strong>Email Sending:</strong> JavaMail API for sending email notifications</li>
-</ul>
+## Overview
 
+CozaStore offers a seamless shopping experience with the following features:
+
+- User authentication with account verification.
+- Advanced product search and filtering.
+- Secure checkout with payment integration.
+- Account management and product listing for sellers.
+
+Below is a detailed breakdown of each page:
+
+---
+
+### Sign In / Sign Up / Verify Account
+
+Users can create an account or sign in using their credentials. Upon registration, users are redirected to a verification page where they must enter the code sent to their email to activate their account.
+
+![Sign In / Sign Up / Verify Account](images/signin_signup_verify.png)
+
+---
+
+### Home Page
+
+The home page showcases featured products and includes navigation links to other sections of the application.
+
+![Home Page](images/home.png)
+
+---
+
+### Shop Page
+
+The shop page allows users to browse and search for products. The advanced search feature helps users find items based on various criteria.
+
+![Shop Page](images/shop.png)
+
+---
+
+### Single Product View
+
+This page displays detailed information about a product, including:
+- Title
+- Price
+- Photos
+- Available colors and sizes
+- Category
+
+Users can also add the product to their cart from this page.
+
+![Single Product View](images/single_product.png)
+
+---
+
+### Cart
+
+The cart page provides an overview of selected products, including their details and the total price. Users can proceed to the checkout from here.
+
+![Cart](images/cart.png)
+
+---
+
+### Checkout
+
+At checkout, users can:
+- Add a new address for delivery
+- Use an existing address
+
+After confirming their details, they can make the payment through the integrated PayHere payment gateway.
+
+![Checkout](images/checkout.png)
+
+---
+
+### My Account
+
+The account management page allows users to:
+- Update personal details (e.g., first name, last name, password).
+
+![My Account](images/my_account.png)
+
+---
+
+### Product Page (For Sellers)
+
+This page enables sellers to list new products on CozaStore by providing necessary details such as title, price, category, and photos.
+
+![Product Page](images/product.png)
+
+---
+
+## Additional Information
+
+This project leverages a free template for the home page, single product view, and shop pages, while other pages are custom-built using HTML, Bootstrap, and JavaScript. The backend functionality is the core focus, ensuring a robust and scalable solution for e-commerce needs.
