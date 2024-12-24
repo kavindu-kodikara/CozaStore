@@ -16,7 +16,7 @@ async  function loadComponents() {
         loadOption("storage", json.sizeList);
 
 
-//        updateProductView(json);
+        updateProductView(json);
 
 
     } else {

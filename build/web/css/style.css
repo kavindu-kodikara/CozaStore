@@ -1,0 +1,38 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.centerVertical {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.centerHorisantal {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+.my-menu-btn{
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.my-menu-btn:hover{
+  color: #6c7ae0;
+}
+
+.manageAccountIcon {
+  font-size: 15px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .manageAccountIcon {
+    font-size: 25px;
+  }
+
+}

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Shoping Cart</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.png" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!--===============================================================================================-->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body class="animsition">
+
+	<!-- Header -->
+	<header class="header-v4">
+		<!-- Header desktop -->
+		<div class="container-menu-desktop">
+			<!-- Topbar -->
+			<div class="top-bar">
+				<div class="content-topbar flex-sb-m h-full container">
+					<div class="left-top-bar">
+						Free shipping for standard order over Rs.5000
+					</div>
+
+					<div class="right-top-bar flex-w h-full">
+						<a href="#" class="flex-c-m trans-04 p-lr-25 " style="text-decoration: none;">
+							Help & FAQs
+						</a>
+
+						<a href="#" class="flex-c-m trans-04 p-lr-25" style="text-decoration: none;">
+							My Account
+						</a>
+
+						<a href="#" class="flex-c-m trans-04 p-lr-25" style="text-decoration: none;">
+							EN
+						</a>
+
+						<a href="#" class="flex-c-m trans-04 p-lr-25" style="text-decoration: none;">
+							USD
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="wrap-menu-desktop">
+				<nav class="limiter-menu-desktop container">
+
+					<!-- Logo desktop -->
+					<a href="#" class="logo">
+						<img src="images/icons/logo-01.png" alt="IMG-LOGO">
+					</a>
+
+					<!-- Menu desktop -->
+					<div class="menu-desktop">
+						<ul class="main-menu">
+							<li >
+								<a href="index.html" style="text-decoration: none;">Home</a>
+							</li>
+
+							<li>
+								<a href="product.html" style="text-decoration: none;">Shop</a>
+							</li>
+
+							<li>
+								<a href="about.html" style="text-decoration: none;">About</a>
+							</li>
+
+							<li>
+								<a href="contact.html" style="text-decoration: none;">Contact</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Icon header -->
+					<div class="wrap-icon-header flex-w flex-r-m">
+						<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
+							<i class="zmdi zmdi-search"></i>
+						</div>
+
+						<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
+							data-notify="2">
+							<i class="zmdi zmdi-shopping-cart"></i>
+						</div>
+
+						<a href="#"
+							class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
+							data-notify="0">
+							<i class="zmdi zmdi-favorite-outline"></i>
+						</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Header Mobile -->
+		<div class="wrap-header-mobile">
+			<!-- Logo moblie -->
+			<div class="logo-mobile">
+				<a href="index.html"><img src="images/icons/logo-01.png" alt="IMG-LOGO"></a>
+			</div>
+
+			<!-- Icon header -->
+			<div class="wrap-icon-header flex-w flex-r-m m-r-15">
+				<div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 js-show-modal-search">
+					<i class="zmdi zmdi-search"></i>
+				</div>
+
+				<div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart"
+					data-notify="2">
+					<i class="zmdi zmdi-shopping-cart"></i>
+				</div>
+
+				<a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti"
+					data-notify="0">
+					<i class="zmdi zmdi-favorite-outline"></i>
+				</a>
+			</div>
+
+			<!-- Button show menu -->
+			<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</div>
+		</div>
+
+
+		<!-- Menu Mobile -->
+		<div class="menu-mobile">
+			<ul class="topbar-mobile">
+				<li>
+					<div class="left-top-bar">
+						Free shipping for standard order over $100
+					</div>
+				</li>
+
+				<li>
+					<div class="right-top-bar flex-w h-full">
+						<a href="#" class="flex-c-m p-lr-10 trans-04">
+							Help & FAQs
+						</a>
+
+						<a href="#" class="flex-c-m p-lr-10 trans-04">
+							My Account
+						</a>
+
+						<a href="#" class="flex-c-m p-lr-10 trans-04">
+							EN
+						</a>
+
+						<a href="#" class="flex-c-m p-lr-10 trans-04">
+							USD
+						</a>
+					</div>
+				</li>
+			</ul>
+
+			<ul class="main-menu-m">
+				<li>
+					<a href="index.html">Home</a>
+
+					<span class="arrow-main-menu-m">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</span>
+				</li>
+
+				<li>
+					<a href="product.html">Shop</a>
+				</li>
+
+				<li>
+					<a href="about.html">About</a>
+				</li>
+
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Modal Search -->
+
+	</header>
+
+
+	<div class="container-fluid" style="margin-bottom: 200px;">
+		<div class="row">
+
+			<div class="col-12">
+				<div class="row">
+
+
+
+					<div class="col-12 ">
+						<div class="row">
+
+							<div class="col-10 offset-1 mt-4">
+								<div class="row">
+									<div class="col-12">
+										<div class="row">
+
+											<div class="col-12 col-lg-3 pe-lg-5" id="menu">
+												
+											</div>
+
+
+											<div class="col-12 col-lg-9">
+												<div class="row">
+													<div class="col-12">
+														<div class="row">
+															<div class="col-6 fs-5 fw-bold pb-3 ltext-103 cl5">My
+																Profile</div>
+															<div onclick="addNewAddress();"
+																class="col-6 text-end pb-3 cursor btnActive"><span
+																	class="fs-5" style="color: #717FE0;">+ </span>Add
+																New Address</div>
+															<div class="col-12 bg-white  p-4 py-2"
+																style="border: 1px solid #E6E6E6">
+
+																<!-- components -->
+
+																<div class="row">
+																	<div class="col-12">
+																		<div class="row">
+
+
+																			<div class="col-12 col-lg-6 p-4">
+																				<div class="row">
+																					<div class="col-1 center">
+																						<div class="form-check">
+
+																							<!-- <input class="form-check-input cursor" type="radio" name="address" checked> -->
+
+																							<input
+																								class="form-check-input cursor"
+																								onclick="setAsDefultAddress();"
+																								type="radio"
+																								name="address">
+
+
+																						</div>
+																					</div>
+																					<div
+																						class="col-11 border border-1   p-3">
+																						<div class="row">
+																							<div class="col-8 col-lg-9">
+																								fname lname</div>
+																							<div class="col-4 col-lg-3 text-end cursor btnActive text-primary"
+																								onclick="deleteAddress();">
+																								DELETE</div>
+																							<div class="col-12 mt-2">
+																								0776655444</div>
+																							<div class="col-12 mt-2">
+																								address address address
+																								address
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+
+
+
+
+
+																		</div>
+																	</div>
+																</div>
+
+																<!-- components -->
+
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- body -->
+
+					<!-- model -->
+
+					<div class="modal" tabindex="-1" id="model">
+						<div class="modal-dialog  modal-dialog-centered modal-lg">
+							<div class="modal-content" id="editModel">
+
+								<div class="modal-header">
+									<h5 class="modal-title fw-bold">Add new address</h5>
+									<button type="button" class="btn-close" onclick="window.location.reload();"
+										aria-label="Close"></button>
+
+								</div>
+								<div class="modal-body">
+
+									<div class="row" id="modelBody">
+										<div class="col-12 text-center text-danger">**Please note that we currently
+											available only to Anuradhapura district only**</div>
+
+										<div class="col-12 col-md-6 ">
+											<div class="row">
+												<div class="col-12 p-3">
+													<div class="row">
+														<div class="col-12">
+															<label class="form-label">First name</label>
+															<input type="text" id="fname" class="form-control"
+																placeholder="Input your first name">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 ">
+											<div class="row">
+												<div class="col-12 p-3">
+													<div class="row">
+														<div class="col-12">
+															<label class="form-label">Last name</label>
+															<input type="text" id="lname" class="form-control"
+																placeholder="Input your last name">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 ">
+											<div class="row">
+												<div class="col-12 p-3">
+													<div class="row">
+														<div class="col-12">
+															<label class="form-label">Mobile number</label>
+															<input type="text" id="mobile" class="form-control"
+																placeholder="Input your mobile number">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-md-6 ">
+											<div class="row">
+												<div class="col-12 p-3">
+													<div class="row">
+														<div class="col-12">
+
+															<label class="form-label">Select province</label>
+															<select class="form-select" id="provinceSelect"
+																aria-label="Default select example"
+																onclick="loadDistrict();">
+																<option selected value="0">Select your province</option>
+
+																<option value="">province_name</option>
+
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 ">
+											<div class="row">
+												<div class="col-12 p-3">
+													<div class="row">
+														<div class="col-12">
+
+															<label class="form-label">Select district</label>
+															<select class="form-select" id="districtSelect"
+																aria-label="Default select example"
+																onclick="loadCity();">
+																<option selected>Select your district</option>
+
+																<option value="">district_name</option>
+
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 " id="cityDiv">
+											<div class="row">
+												<div class="col-12 p-3">
+													<div class="row">
+														<div class="col-12">
+															<label class="form-label">Select city</label>
+
+															<select class="form-select" id="citySelect"
+																aria-label="Default select example">
+																<option selected>Select your city</option>
+
+																<option value="">city_name</option>
+
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 ">
+											<div class="row">
+												<div class="col-12 p-3">
+													<div class="row">
+														<div class="col-12">
+															<label class="form-label">Address</label>
+															<input type="email" id="address" class="form-control"
+																placeholder="Input your Address">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 ">
+											<div class="row">
+												<div class="col-12 p-3">
+													<div class="row">
+														<div class="col-12 d-grid">
+															<button type="button" class="btn text-white"
+																style="background-color: #FF416C; border-radius: 20px;"
+																onclick="saveNewAddress();">Save changes</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+
+
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- model -->
+
+					<!-- model -->
+
+					<div class="modal" tabindex="-1" id="model2">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title fw-bold"></h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+										onclick="window.location.reload();"></button>
+								</div>
+								<div class="modal-body">
+
+									<div class="row" id="modelBody2">
+
+
+
+										<!-- loading -->
+										<div id="loading" class="loading_div ">
+											<div class="boxes">
+												<div class="box">
+													<div></div>
+													<div></div>
+													<div></div>
+													<div></div>
+												</div>
+												<div class="box">
+													<div></div>
+													<div></div>
+													<div></div>
+													<div></div>
+												</div>
+												<div class="box">
+													<div></div>
+													<div></div>
+													<div></div>
+													<div></div>
+												</div>
+												<div class="box">
+													<div></div>
+													<div></div>
+													<div></div>
+													<div></div>
+												</div>
+											</div>
+										</div>
+										<!-- loading -->
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- model -->
+
+
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+	<!-- Footer -->
+	<div id="footer" class="mt-5">
+
+	</div>
+
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="zmdi zmdi-chevron-up"></i>
+		</span>
+	</div>
+
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			fetch('./menu.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('menu').innerHTML = data;
+				});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			fetch('./footer.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('footer').innerHTML = data;
+				});
+		});
+	</script>
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function () {
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+		})
+	</script>
+	<!--===============================================================================================-->
+	<script src="vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script>
+		$('.js-pscroll').each(function () {
+			$(this).css('position', 'relative');
+			$(this).css('overflow', 'hidden');
+			var ps = new PerfectScrollbar(this, {
+				wheelSpeed: 1,
+				scrollingThreshold: 1000,
+				wheelPropagation: false,
+			});
+
+			$(window).on('resize', function () {
+				ps.update();
+			})
+		});
+	</script>
+	<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
