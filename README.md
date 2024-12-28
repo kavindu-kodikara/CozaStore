@@ -144,3 +144,9 @@ This page enables sellers to list new products on CozaStore by providing necessa
 ## Additional Information
 
 This project leverages a free template for the home page, single product view, and shop pages, while other pages are custom-built using HTML, Bootstrap, and JavaScript. The backend functionality is the core focus, ensuring a robust and scalable solution for e-commerce needs.
+
+## Disclaimer
+**This project is intended for demonstration and educational purposes only. Any attempt to publish or redistribute this project as your own is prohibited and will be considered a violation of copyright.**
+
+## License
+This project is licensed under the [MIT License](LICENSE.md).
